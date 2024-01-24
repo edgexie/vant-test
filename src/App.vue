@@ -1,7 +1,9 @@
 <template>
   <div id="app">
-    <button @click="handleClick">点我出现toast</button>
-    <button @click="handleOpenDialog">点我出现dialog</button>
+    <van-button @click="handleClick" type="info">点我出现toast</van-button>
+    <van-button @click="handleOpenDialog" type="info" style="margin-left: 16px"
+      >点我出现dialog</van-button
+    >
     <van-dialog v-model="show" title="Title" show-cancel-button>
       <img src="https://img01.yzcdn.cn/vant/apple-3.jpg" />
     </van-dialog>
